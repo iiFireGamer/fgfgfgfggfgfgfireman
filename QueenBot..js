@@ -1183,4 +1183,4 @@ Server Count: __${guild.memberCount}__**`)
 })
 
 
-client.login('token');
+client.login('NDkxNzI4Mzg0NjI0Mjk1OTU1.DoMXdw.fEHkcTGTQoo5J_WbgrQ6knloDP8');
