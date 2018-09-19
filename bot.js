@@ -67,19 +67,7 @@ client.on('message', message => {
            if(!message.channel.guild) return message.channel.send("This Command is Just For Servers!")
            var embed = new Discord.RichEmbed()
            .setTitle("Invite Bot")
-           .setURL("bot for this server only sorry :D")
-           .setTimestamp()
-           .setColor("RANDOM")
-           message.channel.send({embed})
-       }
-   });
-
-client.on('message', message => {
-       if(message.content.startsWith(`${prefix}support`)){
-           if(!message.channel.guild) return message.channel.send("This Command is Just For Servers!")
-           var embed = new Discord.RichEmbed()
-           .setTitle("Support Server")
-           .setURL("Soon")
+           .setURL("bot_for_this_server_only_sorry_:D")
            .setTimestamp()
            .setColor("RANDOM")
            message.channel.send({embed})
@@ -216,7 +204,7 @@ let args = message.content.split(" ").slice(1).join(" ");
 
 
 
-client.users.get("467777208732352512").send(
+client.users.get("408374252291751976").send(
     "\n" + "**" + "● السيرفر :" + "**" +
     "\n" + "**" + "» " + message.guild.name + "**" +
     "\n" + "**" + " ● المرسل : " + "**" +
@@ -1035,7 +1023,6 @@ client.on("message", message => {
 ❖$avatar ~ صورتك او صورة الي تمنشنو
 ❖$embed ~ يكرر الي تقولو بشكل حلو
 ❖$inv ~ لدعوة البوت الى سيرفرك
-❖$support ~ سيرفر الدعم
 ❖$contact ~ ارسال اقتراح او لمراسلة صاحب البوت
 `)
    message.author.sendEmbed(embed)
