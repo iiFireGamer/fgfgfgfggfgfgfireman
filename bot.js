@@ -62,18 +62,6 @@ let replies = ["Yes", "No.", "I don't know.", "Ask again later plez."];
 }
 });
 
-client.on('message', message => {
-       if(message.content.startsWith(`${prefix}inv`)){
-           if(!message.channel.guild) return message.channel.send("This Command is Just For Servers!")
-           var embed = new Discord.RichEmbed()
-           .setTitle("Invite Bot")
-           .setURL("bot_for_this_server_only_sorry_:D")
-           .setTimestamp()
-           .setColor("RANDOM")
-           message.channel.send({embed})
-       }
-   });
-
 client.on("message", msg => {
   if(msg.content === '$' + "id") {
       const embed = new Discord.RichEmbed();
@@ -1022,7 +1010,6 @@ client.on("message", message => {
 ❖$id ~ معلومات عنك
 ❖$avatar ~ صورتك او صورة الي تمنشنو
 ❖$embed ~ يكرر الي تقولو بشكل حلو
-❖$inv ~ لدعوة البوت الى سيرفرك
 ❖$contact ~ ارسال اقتراح او لمراسلة صاحب البوت
 `)
    message.author.sendEmbed(embed)
